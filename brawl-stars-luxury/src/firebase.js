@@ -7,13 +7,14 @@ import { getFirestore } from 'firebase/firestore';
 //     → Create a project → Add a web app → Copy the config object below.
 // ─────────────────────────────────────────────────────────────────────────────
 const firebaseConfig = {
-  apiKey:            "YOUR_API_KEY",
-  authDomain:        "YOUR_PROJECT_ID.firebaseapp.com",
-  projectId:         "YOUR_PROJECT_ID",
-  storageBucket:     "YOUR_PROJECT_ID.appspot.com",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId:             "YOUR_APP_ID"
+  apiKey:            "[GCP_API_KEY]",
+  authDomain:        "brawl-stars-luxury.firebaseapp.com",
+  projectId:         "brawl-stars-luxury",
+  storageBucket:     "brawl-stars-luxury.firebasestorage.app",
+  messagingSenderId: "1068020800656",
+  appId:             "1:1068020800656:web:6645595459545954595459"
 };
+
 
 const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);

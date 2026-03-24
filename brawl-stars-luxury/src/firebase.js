@@ -1,20 +1,17 @@
-import { initializeApp } from 'firebase/app';
-import { getFirestore } from 'firebase/firestore';
 
-// ─────────────────────────────────────────────────────────────────────────────
-// ⚠️  REPLACE THESE VALUES with your real Firebase project credentials.
-//     Go to: https://console.firebase.google.com
-//     → Create a project → Add a web app → Copy the config object below.
-// ─────────────────────────────────────────────────────────────────────────────
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+
 const firebaseConfig = {
-  apiKey:            "[GCP_API_KEY]",
-  authDomain:        "brawl-stars-luxury.firebaseapp.com",
-  projectId:         "brawl-stars-luxury",
-  storageBucket:     "brawl-stars-luxury.firebasestorage.app",
-  messagingSenderId: "1068020800656",
-  appId:             "1:1068020800656:web:6645595459545954595459"
+  apiKey: "AIzaSyBq7HL3VqVXnfXMpnn6H9EEuut2dOYX7XM",
+  authDomain: "brawl-stars-605b8.firebaseapp.com",
+  projectId: "brawl-stars-605b8",
+  storageBucket: "brawl-stars-605b8.firebasestorage.app",
+  messagingSenderId: "183258385113",
+  appId: "1:183258385113:web:a74f9cb5a3e925b9130cc8",
+  measurementId: "G-DV58JM13DP"
 };
 
 
 const app = initializeApp(firebaseConfig);
-export const db = getFirestore(app);
+const analytics = getAnalytics(app);

@@ -195,9 +195,20 @@ const Landing = ({ onSelect }) => {
         <span style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', letterSpacing: '1px' }}>SELECT A TITLE TO CONTINUE</span>
         <button
           onClick={() => onSelect('admin')}
-          style={{ cursor: 'pointer', color: 'rgba(212, 175, 55, 0.2)', fontSize: '0.7rem', border: 'none', background: 'none' }}
-          onMouseOver={e => e.currentTarget.style.color = 'var(--color-gold)'}
-          onMouseOut={e => e.currentTarget.style.color = 'rgba(212, 175, 55, 0.2)'}
+          style={{ 
+            cursor: 'pointer', 
+            padding: '0.8rem 1.5rem', 
+            marginTop: '1rem', 
+            border: '1px solid rgba(212, 175, 55, 0.3)', 
+            borderRadius: '4px', 
+            background: 'rgba(0,0,0,0.5)', 
+            color: 'var(--color-gold-light)', 
+            fontSize: '0.8rem', 
+            letterSpacing: '2px',
+            transition: 'all 0.3s ease'
+          }}
+          onMouseOver={e => { e.currentTarget.style.background = 'rgba(212, 175, 55, 0.1)'; e.currentTarget.style.borderColor = 'var(--color-gold)'; }}
+          onMouseOut={e => { e.currentTarget.style.background = 'rgba(0,0,0,0.5)'; e.currentTarget.style.borderColor = 'rgba(212, 175, 55, 0.3)'; }}
         >
           MANAGEMENT ACCESS
         </button>
